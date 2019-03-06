@@ -1,0 +1,30 @@
+﻿@using BloodBankManagement.Models
+
+@model List<DonorRegistration>
+
+<h1>DonorRegistration</h1>
+<table cellspacing="10">
+    <tr>
+        <th> Id          </th>
+        <th> Name        </th>
+        <th> Email       </th>
+        <th> Mobile      </th>
+        <th> Blood_Group   </th>
+        <th> Address     </th>
+        <th> Image     </th>
+
+    </tr>
+    @foreach (DonorRegistration donor in Model)
+    {
+    <tr>
+        <td>@donor.Id</td>
+        <td>@donor.Name</td>
+        <td>@donor.Email</td>
+        <td>@donor.Mobile</td>
+        <td>@donor.Blood_Group</td>
+        <td>@donor.Address</td>
+        <td>@donor.Image</td>
+
+    </tr>
+    }
+</table>

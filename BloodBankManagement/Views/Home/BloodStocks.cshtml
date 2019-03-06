@@ -1,0 +1,35 @@
+﻿@using BloodBankManagement.Models
+
+@model List<BloodStock>
+
+<h1>BloodStock</h1>
+<table cellspacing="10">
+    <tr>
+        <th> Id    </th>
+        <th> Apos  </th>
+        <th> Aneg  </th>
+        <th> Bpos  </th>
+        <th> Bneg  </th>
+        <th> Opos  </th>
+        <th> Oneg  </th>
+        <th> ABpos </th>
+        <th> ABneg  </th>
+
+
+    </tr>
+    @foreach (BloodStock bloodstock in Model)
+    {
+    <tr>
+        <td>@bloodstock.Id</td>
+        <td>@bloodstock.Apos</td>
+        <td>@bloodstock.Aneg</td>
+        <td>@bloodstock.Bpos</td>
+        <td>@bloodstock.Bneg</td>
+        <td>@bloodstock.Opos</td>
+        <td>@bloodstock.Oneg</td>
+        <td>@bloodstock.ABpos</td>
+        <td>@bloodstock.ABneg</td>
+
+    </tr>
+    }
+</table>

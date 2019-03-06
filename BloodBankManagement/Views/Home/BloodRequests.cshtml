@@ -1,0 +1,28 @@
+﻿@using BloodBankManagement.Models
+
+@model List<BloodRequest>
+
+<h1>BloodRequest</h1>
+<table cellspacing="10">
+    <tr>
+        <th> Id          </th>
+        <th> Name        </th>
+        <th> Blood_Type  </th>
+        <th> Email       </th>
+        <th> Mobile      </th>
+        <th> Address     </th>
+        
+    </tr>
+    @foreach (BloodRequest bloodrequest in Model)
+    {
+        <tr>
+            <td>@bloodrequest.Id</td>
+            <td>@bloodrequest.Name</td>
+            <td>@bloodrequest.Blood_Type</td>
+            <td>@bloodrequest.Email</td>
+            <td>@bloodrequest.Mobile</td>
+            <td>@bloodrequest.Address</td>
+            
+        </tr>
+    }
+</table>

@@ -1,0 +1,40 @@
+﻿@using BloodBankManagement.Models
+
+@model List<Registration>
+
+<h1>Registration</h1>
+<table cellspacing="10">
+    <tr>
+        <th> Id          </th>
+        <th> Name        </th>
+        <th> Email       </th>
+        <th> Mobile      </th>
+        <th> Gender     </th>
+        <th> Age     </th>
+        <th> Blood_Group   </th>
+        <th> Weight     </th>
+        <th> Height     </th>
+        <th> Image     </th>
+        <th> Password    </th>
+        <th> Address     </th>
+
+    </tr>
+    @foreach (Registration registration in Model)
+    {
+    <tr>
+        <td>@registration.Id</td>
+        <td>@registration.Name</td>
+        <td>@registration.Email</td>
+        <td>@registration.Mobile</td>
+        <td>@registration.Gender</td>
+        <td>@registration.Age</td>
+        <td>@registration.Blood_Group</td>
+        <td>@registration.Weight</td>
+        <td>@registration.Height</td>
+        <td>@registration.Image</td>
+        <td>@registration.Password</td>
+        <td>@registration.Address</td>
+
+    </tr>
+    }
+</table>
